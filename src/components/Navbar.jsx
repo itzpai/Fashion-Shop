@@ -14,7 +14,7 @@ function Navbar() {
         <Link className='text-lg font-bold' to="/">Fashion Shop</Link>
         <button className='flex lg:hidden cursor-pointer' onClick={toggleMenu}>&#8801;</button>
 
-        <div onClick={toggleMenu} className={`absolute inset-0 bg-sky-300 opacity-90 flex justify-center items-center transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300`}>
+        <div onClick={toggleMenu} className={`fixed inset-0 bg-sky-300 opacity-90 flex justify-center items-center transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300`}>
           <ul className='text-2xl text-center'>
             <li>
               <NavLink to="/" className={({ isActive }) => isActive ? "text-yellow-400" : "hover:text-gray-300"} onClick={toggleMenu}>Home</NavLink>
